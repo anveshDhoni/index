@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    #container{
+        width: 20vw;
+        height: 55vh;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+        background-color: blueviolet;
+        box-shadow: 5px 5px 10px rgb(9, 11, 11);
+        border: 4px solid greenyellow;
+        border-radius: 10px;
+
+    }
+    #a{
+        padding: 10px;
+        margin: 5px;
+        width: 40px;
+        height: 40px;
+        background-color: rgb(45, 117, 234);
+        box-shadow: 2px 2px 5px black;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    #calc{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #display{
+        padding: 5px;
+        width: 200px;
+        height: 40px;
+        background-color: cadetblue;
+        border:3px 3px 5px black ,5px groove rgb(225, 201, 25);
+        box-shadow: 5px 5px 10px rgb(5, 11, 16);
+        font-size: 20px;
+    }
+    #but{
+        width: 100px;
+        height: 30px;
+        margin: 2px;
+        border: 2px groove black ;
+        border-radius: 5px ;
+        background-color: rgb(45, 117, 234);
+    }
+    #e{
+        width: 100px;
+        height: 30px;
+        margin: 2px;
+        border: 2px groove black ;
+        border-radius: 5px ;
+        background-color: rgb(45, 117, 234);
+    }
+    #a:hover
+    {
+        background-color: purple;
+        transform: scale(1.2);
+        
+    }
+    #but:hover
+    {
+        background-color: purple;
+        transform: scale(1.2);
+    }
+    #e:hover
+    {
+        background-color: purple;
+        transform: scale(1.2);
+        
+    }
+     
+</style>
+<body>
+    <div id="container">
+        <form name="calc">
+            <input id="display" name="Answer">
+            <br><br>
+            <input id="a" type="button" value="1" onclick="calc.Answer.value +='1'">
+            <input id="a" type="button" value="2" onclick="calc.Answer.value +='2'">
+            <input id="a" type="button" value="3" onclick="calc.Answer.value +='3'">
+            <input id="a" type="button" value="+" onclick="calc.Answer.value +='+'">
+            <br><br>
+            <input id="a" type="button" value="4" onclick="calc.Answer.value +='4'">
+            <input id="a" type="button" value="5" onclick="calc.Answer.value +='5'">
+            <input id="a" type="button" value="6" onclick="calc.Answer.value +='6'">
+            <input id="a" type="button" value="-" onclick="calc.Answer.value +='-'">
+            <br><br>
+            <input id="a" type="button" value="7" onclick="calc.Answer.value +='7'">
+            <input id="a" type="button" value="8" onclick="calc.Answer.value +='8'">
+            <input id="a" type="button" value="9" onclick="calc.Answer.value +='9'">
+            <input id="a" type="button" value="*" onclick="calc.Answer.value +='*'">
+            <br><br>
+            <input id="a" type="button" value="/" onclick="calc.Answer.value +='/'">
+            <input id="a" type="button" value="0" onclick="calc.Answer.value +='0'">
+            <input id="a" type="button" value="." onclick="calc.Answer.value +='.'">
+            <input id="a" type="button" value="%" onclick="calc.Answer.value +='%'">
+            <br><br>
+            <input id="but" type="button" value="Clear" onclick="calc.Answer.value=' '">
+            <input id="e" type="button" value="=" onclick="calc.Answer.value=eval(calc.Answer.value)">
+        </form>
+         
+    </div>
+</body>
+</html>
